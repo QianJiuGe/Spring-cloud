@@ -1,6 +1,17 @@
 server:
   port: 8001
 
+eureka:
+  client:
+    #表示是否默认将自己入驻进eureka注册服务中心
+    register-with-eureka: true
+    #是否从EurekaServer抓取已有的注册中心，默认为true。单节点无所谓，集群必须配合ribbon使用负载均衡
+    fetch-registry: true
+    #入驻eureka服务器的地址
+    service-url:
+      defaultZone: http://localhost:7001/eureka
+
+
 spring:
   application:
     name: cloud-payment-service

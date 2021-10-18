@@ -1,9 +1,8 @@
 package com.wustht.payment.controller;
 
-import com.sun.org.apache.regexp.internal.RE;
-import com.wustht.payment.pojo.entities.Payment;
-import com.wustht.payment.pojo.entities.Result;
 import com.wustht.payment.service.PaymentService;
+import com.wustht.pojo.entities.Payment;
+import com.wustht.pojo.entities.Result;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
 
@@ -20,7 +19,7 @@ public class PaymentController{
     private PaymentService paymentService;
 
     @PostMapping(value = "/payment/create")
-    public Result create(Payment payment)
+    public Result create(@RequestBody Payment payment)
     {
         int result = paymentService.create(payment);
         log.info("*****插入结果："+result);

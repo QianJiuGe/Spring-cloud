@@ -1,6 +1,6 @@
 package com.wustht.payment.service;
 
-import com.wustht.payment.pojo.entities.Payment;
+import com.wustht.pojo.entities.Payment;
 
 /**
  * @author Ht

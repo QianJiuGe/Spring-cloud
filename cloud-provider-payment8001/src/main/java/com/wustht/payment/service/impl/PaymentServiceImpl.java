@@ -1,8 +1,8 @@
 package com.wustht.payment.service.impl;
 
 import com.wustht.payment.mapper.PaymentMapper;
-import com.wustht.payment.pojo.entities.Payment;
 import com.wustht.payment.service.PaymentService;
+import com.wustht.pojo.entities.Payment;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 

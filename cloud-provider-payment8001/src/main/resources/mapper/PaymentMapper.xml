@@ -4,12 +4,12 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="com.wustht.payment.mapper.PaymentMapper">
-    <insert id="createPayment" parameterType="com.wustht.payment.pojo.entities.Payment" useGeneratedKeys="true" keyProperty="id">
+    <insert id="createPayment" parameterType="com.wustht.pojo.entities.Payment" useGeneratedKeys="true" keyProperty="id">
         insert into t_payment(serial)
         value(#{serial})
     </insert>
 
-    <select id="getPaymentById" resultType="com.wustht.payment.pojo.entities.Payment">
+    <select id="getPaymentById" resultType="com.wustht.pojo.entities.Payment">
       select
         id,serial
       from

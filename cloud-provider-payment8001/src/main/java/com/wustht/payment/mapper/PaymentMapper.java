@@ -1,6 +1,6 @@
 package com.wustht.payment.mapper;
 
-import com.wustht.payment.pojo.entities.Payment;
+import com.wustht.pojo.entities.Payment;
 import org.apache.ibatis.annotations.Mapper;
 
 /**
