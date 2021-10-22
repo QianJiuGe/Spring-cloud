@@ -10,8 +10,8 @@ eureka:
     fetch-registry: true
     #入驻eureka服务器的地址
     service-url:
-#      defaultZone: http://eureka01.com:7001/eureka
-      defaultZone: http://eureka02.com:7002/eureka,http://eureka01.com:7001/eureka  #集群版
+      defaultZone: http://eureka01.com:7001/eureka
+      #defaultZone: http://eureka02.com:7002/eureka,http://eureka01.com:7001/eureka  #集群版
 
 spring:
   application:

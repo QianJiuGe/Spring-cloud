@@ -33,8 +33,6 @@ public class PaymentController {
         int result = paymentService.create(payment);
         log.info("*****插入结果：" + result);
 
-        log.info("热部署结果");
-
         if (result > 0) {
             return new Result(200, "插入数据库成功,serverPort: " + serverPort, result);
         } else {
@@ -70,5 +68,12 @@ public class PaymentController {
 
         return discoveryClient;
     }
+
+    @GetMapping("/payment/lb")
+    public String getPaymentLb(){
+
+        return serverPort;
+    }
+
 
 }
